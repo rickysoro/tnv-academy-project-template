@@ -18,16 +18,11 @@ export class LoginComponent implements OnInit {
   }
 
   login(form: NgForm) {
-    console.log("login component.ts", form.value);
     form.control.markAllAsTouched();
     if (form.valid) {
       this.authService.login(form.value).subscribe({
-        next: (response) => {
-          localStorage.setItem("user", JSON.stringify(response));
-          this.router.navigateByUrl("/rankings");
-        },
-        error: () => alert("Login Errrato"),
-      });
+        next: (response) => this.router.navigateByUrl("/")
+        });
+      }
     }
   }
-}
