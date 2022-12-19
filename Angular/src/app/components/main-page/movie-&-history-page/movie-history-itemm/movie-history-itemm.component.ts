@@ -9,6 +9,7 @@ export class MovieHistoryItemmComponent implements OnInit {
 
   constructor() { }
 
+
   ngOnInit(): void {
   }
 
