@@ -9,18 +9,36 @@ import { LoginDTO, RegisterDTO, User } from "src/app/models/user";
   providedIn: "root",
 })
 export class AuthService {
+
   springBootUrl = 'http://localhost:8080/';
 
-  constructor(private router: Router, private http: HttpClient) {}
+
+  constructor(private router: Router) {}
 
   login(loginData: LoginDTO) {
+
     console.log('auth service.ts', loginData);
     return this.http.get(`${this.springBootUrl + 'users/login/'}${loginData.username}/${loginData.password}`);
 
+    const response: User = {
+      name: "Paolino",
+      surname: "Paperino",
+      username: "paolino504"
+    };
+
+    localStorage.setItem("user", JSON.stringify(response));
+
+    return of ('login ok');
+
+
   }
   register(registerData: RegisterDTO) {
+
     this.router.navigateByUrl("/")
     return this.http.post<RegisterDTO>(`${this.springBootUrl + 'utility/registrazione'}`, registerData);
+
+    // TODO Chiamare il servizio per la registrazione e redirigere l'utente alla root per il login
+    this.router.navigateByUrl("/");
   }
 
   logout() {
