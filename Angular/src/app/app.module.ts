@@ -14,8 +14,6 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { RankingsComponent } from './components/rankings/rankings.component';
 import { MovieHistoryComponent } from './components/main-page/movie-&-history-page/movie-history/movie-history.component';
-import { MovieHistorySectionComponent} from './components/main-page/movie-&-history-page/movie-history-section/movie-history-section.component'
-import { MovieHistoryItemmComponent } from './components/main-page/movie-&-history-page/movie-history-itemm/movie-history-itemm.component';
 
 @NgModule({
   declarations: [
@@ -29,8 +27,6 @@ import { MovieHistoryItemmComponent } from './components/main-page/movie-&-histo
     ProfileComponent,
     RankingsComponent,
     MovieHistoryComponent,
-    MovieHistorySectionComponent,
-    MovieHistoryItemmComponent
   ],
   imports: [
     BrowserModule,

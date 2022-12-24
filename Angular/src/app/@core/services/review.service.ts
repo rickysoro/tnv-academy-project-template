@@ -7,14 +7,13 @@ import { Router } from '@angular/router';
   providedIn: 'root'
 })
 export class ReviewService {
-  dotnetUrl = `http://localhost:5240/reviews`;
+  baseUrl = `http://localhost:5240/reviews`;
 
   constructor(private router: Router, private http: HttpClient) { 
   }
   
   createReview(reviewBody: ReviewDTO) {
-    return this.http.post(this.dotnetUrl, reviewBody)
+    console.log('review service.ts', reviewBody)
+    return this.http.post(this.baseUrl, reviewBody)
   }
-
-
 }

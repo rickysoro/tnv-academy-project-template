@@ -1,7 +1,10 @@
+import { Injectable } from "@angular/core";
+
 export interface User {
-  name: string;
-  surname: string;
-  username: string;
+  name?: string;
+  surname?: string;
+  username?: string;
+  id: number;
 }
 
 export interface LoginDTO {
@@ -14,4 +17,5 @@ export interface RegisterDTO {
   surname: string;
   username: string;
   password: string;
+  userId: number;
 }
