@@ -1,0 +1,104 @@
+.md-button.md-raised:not([disabled]) {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  }
+  
+  .searchdesign{
+      height: 44px;
+      background: #212121;
+      border: 1px solid #716e6e;
+      color: #fff;
+      font-size: 15px;
+  }
+  
+  .btnDesign{
+      height: 44px;
+      border-radius: 0;
+      width: 55px;
+      background: #000000;
+      border: #000000;
+  }
+  
+  .listing-events-style {
+    background-color: #ffffff;
+    border: 1px solid var(--surface-d);
+    border-radius: 3px;
+    margin: .3rem;
+    text-align: center;
+    padding: 2rem 0;
+    &:focus {
+      outline-style: none;
+    }
+  }
+  
+      .product-image {
+          width: 100%;
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)
+      }
+  
+      .pi {
+          font-family: primeicons;
+          font-style: normal;
+          font-weight: 400;
+          font-variant: normal;
+          text-transform: none;
+          line-height: 1;
+          display: inline-block;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+      }
+  
+      .p-button {
+          color: #ffffff;
+          background: black;
+          border: 1px solid black;
+          padding: 0.75rem 1.25rem;
+          font-size: 1rem;
+          transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+          border-radius: 6px;
+          width: 100px;
+          max-width: 100%;
+      }
+  
+      .p-button-success {
+          color: #ffffff;
+          background: #22C55E;
+          border: 1px solid #22C55E;
+      }
+  
+  
+        .box {
+          background-color: var(--green-500);
+          color: #ffffff;
+          width: 100px;
+          height: 100px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+          border-radius: 4px;
+          margin-top: 1rem;
+          font-weight: bold;
+          box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+      }
+  
+      @keyframes my-fadein {
+          0%   { opacity: 0; }
+          100% { opacity: 1; }
+      }
+  
+      @keyframes my-fadeout {
+          0%   { opacity: 1; }
+          100% { opacity: 0; }
+      }
+  
+      .my-fadein {
+          animation: my-fadein 150ms linear;
+      }
+  
+      .my-fadeout {
+          animation: my-fadeout 150ms linear;
+      }
+  
+  
+    

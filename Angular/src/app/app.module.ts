@@ -13,7 +13,17 @@ import { NavbarComponent } from './@shared/components/navbar/navbar.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { RankingsComponent } from './components/rankings/rankings.component';
-import { MovieHistoryComponent } from './components/main-page/movie-&-history-page/movie-history/movie-history.component';
+import { ReviewComponent } from './components/review/review.component';
+import { MoviesComponent } from './components/movies/movies/movies.component';
+import { MoviesItemComponent } from './components/movies/movies-item/movies-item.component';
+import { MoviesDateComponent } from './components/movies/movies-date/movies-date.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { CarouselModule } from 'primeng/carousel';
+import { MatTabsModule } from '@angular/material/tabs';
+import { ButtonModule } from 'primeng/button';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { StyleClassModule } from 'primeng/styleclass';
 
 @NgModule({
   declarations: [
@@ -26,16 +36,28 @@ import { MovieHistoryComponent } from './components/main-page/movie-&-history-pa
     WelcomeComponent,
     ProfileComponent,
     RankingsComponent,
-    MovieHistoryComponent,
+    ReviewComponent,
+    MoviesComponent,
+    MoviesItemComponent,
+    MoviesDateComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    MatButtonModule,
+    MatIconModule,
+    CarouselModule,
+    MatTabsModule,
+    ButtonModule,
+    BrowserAnimationsModule,
+    StyleClassModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MovieHistoryComponent } from './movie-history.component';
+import { MoviesDateComponent } from './movies-date.component';
 
-describe('MovieHistoryComponent', () => {
-  let component: MovieHistoryComponent;
-  let fixture: ComponentFixture<MovieHistoryComponent>;
+describe('MoviesDateComponent', () => {
+  let component: MoviesDateComponent;
+  let fixture: ComponentFixture<MoviesDateComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MovieHistoryComponent ]
+      declarations: [ MoviesDateComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(MovieHistoryComponent);
+    fixture = TestBed.createComponent(MoviesDateComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

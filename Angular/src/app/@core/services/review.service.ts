@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 export class ReviewService {
   baseUrl = `http://localhost:5240/reviews`;
+  getUrl = `http://localhost:5240`;
 
   constructor(private router: Router, private http: HttpClient) { 
   }
@@ -15,5 +16,9 @@ export class ReviewService {
   createReview(reviewBody: ReviewDTO) {
     console.log('review service.ts', reviewBody)
     return this.http.post(this.baseUrl, reviewBody)
+  }
+
+  getReview(id: number) {
+    this.http.get(`${this.getUrl}/${id}`)
   }
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Film } from 'src/app/models/film';
+import { MovieData } from 'src/app/models/movieData';
 
 @Component({
   selector: 'tnv-main-page',
@@ -8,7 +8,7 @@ import { Film } from 'src/app/models/film';
 })
 export class MainPageComponent implements OnInit {
 
-  filmItems: Film[] = [];
+  filmItems: MovieData[] = [];
 
   constructor() { }
 

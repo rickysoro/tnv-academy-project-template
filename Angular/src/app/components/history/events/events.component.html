@@ -1,0 +1,15 @@
+<p-carousel [value]="events" [numVisible]="10" [numScroll]="3" [circular]="false" [responsiveOptions]="responsiveOptions">
+    <ng-template pTemplate="header">
+        <h5>EVENTI CORRELATI</h5>
+    </ng-template>
+    <ng-template let-event pTemplate="item">
+        <div class="product-item" routerLinkActive="active">
+                <div>
+               <!--  <a [routerLink]="['/movies/', movie.movieId]"></a> -->
+                    <h4>
+                    {{ event.event | titlecase }}</h4>
+                    <p class="rate"><span>{{event.year | date: 'yyyy'}}</span></p>
+                </div>    
+        </div>
+    </ng-template>
+</p-carousel>

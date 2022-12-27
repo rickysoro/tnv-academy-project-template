@@ -1,0 +1,118 @@
+<div class="hero">
+    <div class="backdrop">
+        <div class="lazyloaded">
+
+            <img class="lazyload image" src="https://image.tmdb.org/t/p/original/{{ movie.backdrop_path }}">
+        </div>
+    </div>
+
+    <div class="pane">
+        <div>
+            <div class="name">{{ movie.title }}</div>
+            <div class="meta">
+            </div>
+            <div class="desc">{{ movie.overview }}</div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <mat-tab-group class="mt-5 mb-5" mat-align-tabs="center" animationDuration="0ms">
+                <mat-tab>
+                    <div class="listing-space info__movies">
+                        <div class="left">
+                            <div class="poster">
+                                <img *ngIf="movie?.poster_path"
+                                    src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/{{movie.poster_path}}"
+                                    [alt]="movie.title" class="product-image" />
+                                <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/{{movie.poster_path}}"> -->
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="overview">
+                                <h2 class="title">Storyline</h2>
+                                <div>{{movie.overview}}</div>
+                            </div>
+                            <div class="stats">
+                                <ul class="nolist">
+                                    <li>
+                                        <div class="label">
+                                            Released
+                                        </div>
+                                        <div class="value">
+                                            {{ movie.release_date }}
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="label">
+                                            Runtime
+                                        </div>
+                                        <div class="value">
+                                            {{ movie.runtime }} minutes
+                                        </div>
+                                    </li>
+                                    <li *ngIf="movie.budget">
+                                        <div class="label">
+                                            Budget
+                                        </div>
+                                        <div class="value">
+                                            ${{ movie.budget }}
+                                        </div>
+                                    </li>
+                                    <li *ngIf="movie.revenue">
+                                        <div class="label">
+                                            Revenue
+                                        </div>
+                                        <div class="value">
+                                            ${{ movie.revenue }}
+                                        </div>
+                                    </li>
+                                    <li *ngIf="movie.vote_average">
+                                        <div class="label">
+                                            Vote Average
+                                        </div>
+                                        <div class="value">
+                                            {{ movie.vote_average }}
+                                        </div>
+                                    </li>
+                                    <button mat-raised-button type="submit"
+                                        class="form-control btn btn-primary rounded submit px-3 mt-2"
+                                        (click)="getEventByYear(movie.release_date)">
+                                        <h3 class="centered-element" style="text-align:center">VEDI EVENTI STORICI</h3>
+                                    </button>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </mat-tab>
+            </mat-tab-group>
+
+            <div>
+                <h2>Inserisci la tua recensione:</h2>
+                <textarea id="review" rows="12" cols="130"></textarea><br>
+                <button>Invia</button>
+            </div>
+
+            <p-carousel [value]="events" [numVisible]="3" [numScroll]="3" [circular]="false"
+                [responsiveOptions]="responsiveOptions">
+                <ng-template pTemplate="header">
+                    <br>
+                    <h5 class="listing__title">EVENTI STORICI COLLEGATI AL MESE E ANNO DEL FILM SELEZIONATO</h5>
+                </ng-template>
+                <br>
+                <ng-template let-event pTemplate="item">
+                    <div class="listing-events-style">
+                        <div>
+                            <h4 style="text-align:center">
+                                {{ event.event | titlecase }}</h4>
+                            <h4 style="text-align:center">Year: <span>{{event?.year}} | Month:
+                                    <span>{{event?.month}}</span></span></h4>
+                        </div>
+                        <br>
+                    </div>
+                </ng-template>
+            </p-carousel>
+        </div>
+    </div>

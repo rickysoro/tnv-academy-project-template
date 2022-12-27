@@ -8,7 +8,8 @@ import { RegisterComponent } from "./@shared/components/register/register.compon
 import { WelcomeComponent } from "./components/welcome/welcome.component";
 import { ProfileComponent } from "./components/profile/profile.component";
 import { RankingsComponent } from "./components/rankings/rankings.component";
-import { MovieHistoryComponent} from "./components/main-page/movie-&-history-page/movie-history/movie-history.component"
+import { MoviesDateComponent } from "./components/movies/movies-date/movies-date.component";
+import { MoviesItemComponent } from "./components/movies/movies-item/movies-item.component";
  
 const routes: Routes = [
   {
@@ -19,7 +20,8 @@ const routes: Routes = [
       { path: "welcome", component: WelcomeComponent },
       { path: "profile", component: ProfileComponent },
       { path: "rankings", component: RankingsComponent },
-      { path: "movie-history", component: MovieHistoryComponent},
+      { path: "movies", component: MoviesDateComponent},
+      { path: "movies/:movieId", component: MoviesItemComponent},
       { path: "", redirectTo: "welcome", pathMatch: 'full' },
     ],
   },
