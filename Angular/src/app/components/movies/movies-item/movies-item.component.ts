@@ -4,7 +4,6 @@ import { HistoryEventsService } from 'src/app/@core/services/history-events.serv
 import { MoviesService } from 'src/app/@core/services/movies.service';
 import { MovieData } from 'src/app/models/movieData';
 import { HistoryEvents } from 'src/app/models/historyEvent';
-import { MoviesDateComponent } from '../movies-date/movies-date.component';
 
 @Component({
   selector: 'tnv-movies-item',

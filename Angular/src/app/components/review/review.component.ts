@@ -3,6 +3,7 @@ import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AuthService } from 'src/app/@core/services/auth.service';
 import { ReviewService } from 'src/app/@core/services/review.service';
+import { MoviesService } from 'src/app/@core/services/movies.service';
 
 @Component({
   selector: 'tnv-review',
@@ -12,12 +13,12 @@ import { ReviewService } from 'src/app/@core/services/review.service';
 export class ReviewComponent implements OnInit {
   form: string = "Questo film è bellissimo.";
 
-  constructor(private router: Router, private reviewService: ReviewService, private authService: AuthService) { }
+  constructor(private router: Router, private reviewService: ReviewService, private authService: AuthService, private movieService: MoviesService) { }
 
   createReviewBody(form: NgForm) {
     let review = {
       userId: this.authService.getCurrentUser().id,
-      movieId: 1,
+      movieId: 2,
       comment: this.form
     }
     return review;

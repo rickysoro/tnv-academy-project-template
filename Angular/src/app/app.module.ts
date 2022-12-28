@@ -17,6 +17,7 @@ import { ReviewComponent } from './components/review/review.component';
 import { MoviesComponent } from './components/movies/movies/movies.component';
 import { MoviesItemComponent } from './components/movies/movies-item/movies-item.component';
 import { MoviesDateComponent } from './components/movies/movies-date/movies-date.component';
+import { EventsComponent } from './components/history/events/events.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { CarouselModule } from 'primeng/carousel';
@@ -24,6 +25,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { ButtonModule } from 'primeng/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { StyleClassModule } from 'primeng/styleclass';
+import { NumberWithCommasPipe } from '../assets/pipe/number-with-commas.pipe';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { StyleClassModule } from 'primeng/styleclass';
     ReviewComponent,
     MoviesComponent,
     MoviesItemComponent,
-    MoviesDateComponent
+    MoviesDateComponent,
+    EventsComponent,
+    NumberWithCommasPipe
   ],
   imports: [
     BrowserModule,

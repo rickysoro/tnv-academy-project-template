@@ -1,6 +1,6 @@
 import { Component, Input, OnChanges, OnInit } from '@angular/core';
 import { HistoryEventsService } from 'src/app/@core/services/history-events.service';
-import { HistoryEvent } from 'src/app/models/historyEvent';
+import { HistoryEvents } from 'src/app/models/historyEvent';
 
 @Component({
   selector: 'tnv-events',
@@ -8,10 +8,10 @@ import { HistoryEvent } from 'src/app/models/historyEvent';
   styleUrls: ['./events.component.scss']
 })
 export class EventsComponent implements OnInit, OnChanges {
-  events: Partial<HistoryEvent>[] = [];
+  events: Partial<HistoryEvents>[] = [];
   responsiveOptions;
 
-  @Input() event: Partial<HistoryEvent> = {};
+  @Input() event: Partial<HistoryEvents> = {};
 
   constructor(private historyEventsService: HistoryEventsService) { 
     this.responsiveOptions = [
