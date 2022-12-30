@@ -89,11 +89,13 @@
                 </mat-tab>
             </mat-tab-group>
 
-            <div>
+            <!-- <div>
                 <h2>Inserisci la tua recensione:</h2>
                 <textarea id="review" rows="12" cols="130"></textarea><br>
                 <button>Invia</button>
-            </div>
+            </div> -->
+
+            <tnv-review></tnv-review>
 
             <p-carousel [value]="events" [numVisible]="3" [numScroll]="3" [circular]="false"
                 [responsiveOptions]="responsiveOptions">

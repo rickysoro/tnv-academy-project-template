@@ -1,9 +1,9 @@
-<div>
-  <h2>Lascia la tua recensione:</h2>
-  <textarea id="review" rows="12" cols="120"></textarea><br>
-  <form #f="ngForm" (ngSubmit)="insertReview(f)">
-    <div class="form-group">
-      <button type="submit" class="button">Invia</button>
-    </div>
-  </form>
-</div>
+<form #f="ngForm" (ngSubmit)="insertReview(f)">
+  <div class="mb-3">
+    <label for="review" class="form-label">
+      <h2> Lascia la tua recensione </h2>
+    </label><br>
+    <textarea [ngModel] name="review" id="review" cols="120" rows="12"></textarea><br>
+    <button type="submit" class="btn btn-primary">INVIA</button><br>
+  </div>
+</form>

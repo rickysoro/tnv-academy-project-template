@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import { AuthService } from 'src/app/@core/services/auth.service';
 import { ReviewService } from 'src/app/@core/services/review.service';
 import { MoviesService } from 'src/app/@core/services/movies.service';
+import { MovieData } from 'src/app/models/movieData';
+import { MoviesItemComponent } from '../movies/movies-item/movies-item.component';
 
 @Component({
   selector: 'tnv-review',
@@ -11,15 +13,22 @@ import { MoviesService } from 'src/app/@core/services/movies.service';
   styleUrls: ['./review.component.scss']
 })
 export class ReviewComponent implements OnInit {
-  form: string = "Questo film è bellissimo.";
+  movieId: number;
+  comment: string = "";
 
-  constructor(private router: Router, private reviewService: ReviewService, private authService: AuthService, private movieService: MoviesService) { }
+  constructor(private activatedRoute: ActivatedRoute, private reviewService: ReviewService, private authService: AuthService) { 
+    this.movieId = this.activatedRoute.snapshot.params['movieId'];
+  }
+
+  /* onSubmit(form: NgForm) {
+    console.log(form.value)
+  } */
 
   createReviewBody(form: NgForm) {
     let review = {
       userId: this.authService.getCurrentUser().id,
-      movieId: 2,
-      comment: this.form
+      movieId: this.movieId,
+      comment: (form.value.comment).toString                             /* JSON.stringify(form) -> Si vide ma JSON */ 
     }
     return review;
   }
