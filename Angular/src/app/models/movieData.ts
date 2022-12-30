@@ -2,7 +2,7 @@ export interface MovieData {
   adult: boolean
   backdrop_path: string
   belongs_to_collection: any
-  budget: number
+  budget: any
   genres: Genre[]
   homepage: string
   id: number
@@ -15,14 +15,14 @@ export interface MovieData {
   production_companies: ProductionCompany[]
   production_countries: ProductionCountry[]
   release_date: string
-  revenue: number
+  revenue: any
   runtime: number
   spoken_languages: SpokenLanguage[]
   status: string
   tagline: string
   title: string
   video: boolean
-  vote_average: number
+  vote_average: any
   vote_count: number
 }
 

@@ -1,4 +1,4 @@
-<div>
+<!-- <div>
     <label>
         <span style="text-align:center">Data di Inizio</span>
         <input type="date" class="form-control" id="start-date" [max]="endDateFilter" [(ngModel)]="startDateFilter" />
@@ -18,4 +18,29 @@
     <div>
         <tnv-movies [startDateFilter]="startDate" [endDateFilter]="endDate"> </tnv-movies>
     </div>
+</div> -->
+
+<div >
+    <label style="width:100%; margin:0 auto;">
+        <span style="text-align:center">Data di Inizio</span>
+            <input type="date" class="form-control" id="start-date" [max]="endDateFilter"
+                [(ngModel)]="startDateFilter" /><br>
+    </label>
+    <label style="width:100%; margin:0 auto;">
+        <span>Data di Fine</span>
+            <input type="date" class="form-control" id="stop-date" [min]="startDateFilter"
+                [(ngModel)]="endDateFilter" /><br>
+    </label>
+    <br>
+    <button class="button-31" role="button" type="submit" (click)="onFormSubmit()">CERCA FILM</button>
+        <!-- <button mat-raised-button type="submit" class="form-control btn btn-primary rounded submit px-3 mt-2" (click)="onFormSubmit()">
+            <h3 class="centered-element" style="text-align:center">CERCA FILM</h3>
+        </button> -->
+    </div>
+
+
+<div *ngIf="isDateFiltered">
+<div>
+    <tnv-movies [startDateFilter]="startDate" [endDateFilter]="endDate"> </tnv-movies>
+</div>
 </div>
