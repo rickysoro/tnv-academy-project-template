@@ -27,7 +27,7 @@ export class ReviewComponent implements OnInit {
     let review = {
       userId: this.authService.getCurrentUser().id,
       movieId: this.movieId,
-      comment: form.value                                                       /* JSON.stringify(form) -> Si vide ma JSON  */
+      comment: form.value                                 /* JSON.stringify(form) -> Si vide ma JSON  */
     }
     return review;
   }
