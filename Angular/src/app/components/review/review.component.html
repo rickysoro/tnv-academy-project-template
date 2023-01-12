@@ -1,4 +1,4 @@
-<!-- <form #f="ngForm" (ngSubmit)="insertReview(f)">
+<form #f="ngForm" (ngSubmit)="insertReview(f)">
   <div class="mb-3">
     <label for="review" class="form-label">
       <h2> Lascia la tua recensione </h2>
@@ -6,12 +6,12 @@
     <textarea [ngModel] name="review" id="review" cols="120" rows="12"></textarea><br>
     <button type="submit" class="btn btn-primary">INVIA</button><br>
   </div>
-</form> -->
+</form>
 
-<form #f="ngForm" (ngSubmit)="insertReview(f)">
+<!-- <form #f="ngForm" (ngSubmit)="insertReview(f)">
   <div class="mb-3">
     <label for="review" class="form-label">Lascia la tua recensione</label>
-    <input type="text" class="form-control" id="title" placeholder="..."><br>
+    <input [ngModel] name="comment-review" type="text" class="form-control" id="title" placeholder="..."><br>
     <button type="submit" class="btn btn-primary">INVIA</button><br>
   </div>
-</form>
+</form> -->
