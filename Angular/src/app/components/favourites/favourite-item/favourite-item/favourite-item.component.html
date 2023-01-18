@@ -1,0 +1,14 @@
+<div>
+    <img  [src]="'https://image.tmdb.org/t/p/w370_and_h556_face' + movie.poster_path" >
+        <div>
+            <a [routerLink]="['/movies', movie.id]">Titolo: {{ movie.title | titlecase }}</a>
+            <p >Data d'uscita: {{ movie.release_date | date: 'd MMM y' }} </p>
+            <p> Popolarità: {{movie.popularity}}</p>
+        </div>
+</div>
+
+<div>
+    <form #removeFavourite = "ngForm" (ngSubmit)="onSubmit(removeFavourite)">
+        <button type="submit"><p>Rimuovi</p></button>
+    </form>
+</div>

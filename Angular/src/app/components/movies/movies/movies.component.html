@@ -58,14 +58,19 @@
                         <br>
                         <p class="rate"><span>{{movie?.release_date | date: 'YYYY'}} | </span><span>Popularity: {{movie?.popularity}} </span></p>
                     </div>
+                    <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+                        <button type="submit" *ngIf="onSubmit" class="btn btn-light" style="background-color: #8C0335">
+                          <p>Add Preferiti</p>
+                        </button>
+                    </form>
             </div>
             <div>
         </div>
         <button type="submit" style="width:100%; margin: auto;" class="btn btn-dark" (click)="getEventByYear(movie.release_date)">EVENTI STORICI</button>
-        <!-- <button class="button-31" role="button" type="submit" style="width:100%; margin: auto;" (click)="getEventByYear(movie?.release_date)">EVENTI STORICI</button> -->
-            <!-- <button mat-raised-button type="submit" class="form-control btn btn-primary rounded submit px-3 mt-2" (click)="getEventByYear(movie?.release_date)">
+         <button class="button-31" role="button" type="submit" style="width:100%; margin: auto;" (click)="getEventByYear(movie?.release_date)">EVENTI STORICI</button>
+             <button mat-raised-button type="submit" class="form-control btn btn-primary rounded submit px-3 mt-2" (click)="getEventByYear(movie?.release_date)">
                 <h3 class="centered-element" style="text-align:center">VEDI EVENTI STORICI</h3>
-            </button> -->
+            </button> 
         </ng-template>
         
     </p-carousel>
