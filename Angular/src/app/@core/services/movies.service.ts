@@ -36,8 +36,12 @@ export class MoviesService {
     (`${this.baseUrl}${id}?${this.apiKey}&language=en-US`);
   } */
 
-  getMovie(id: string): Observable<any> {
+/*   getMovie(id: string): Observable<any> {
     return this.http.get(`${this.baseUrlId}movie/${id}?${this.apiKey}`);
+  } */
+
+  getMovie(movieId: number | undefined) {
+    return this.http.get<MovieData>(`https://api.themoviedb.org/3/movie/${movieId}?${this.apiKey}&language=it-it`);
   }
 
   getNowPlaying(page: number): Observable<any> {
