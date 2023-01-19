@@ -40,6 +40,10 @@ export class MoviesService {
     return this.http.get(`${this.baseUrlId}movie/${id}?${this.apiKey}`);
   }
 
+  getFavouriteMovie(movieId: number | undefined) {
+    return this.http.get<MovieData>(`${this.baseUrlId}${movieId}?${this.apiKey}&language=it-it`);
+  }
+
   getNowPlaying(page: number): Observable<any> {
     // tslint:disable-next-line: max-line-length
     return this.http.get(`${this.baseUrl}movie/now_playing?api_key=${this.apiKey}&page=${page}&language=${this.language}&region=${this.region}`);
