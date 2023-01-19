@@ -3,6 +3,10 @@ import { HistoryEventsService } from 'src/app/@core/services/history-events.serv
 import { MoviesService } from 'src/app/@core/services/movies.service';
 import { MovieData } from 'src/app/models/movieData';
 import { HistoryEvents } from 'src/app/models/historyEvent';
+import { FavouriteService } from 'src/app/@core/services/favourite.service';
+import { User } from 'src/app/models/user';
+import { NgForm } from '@angular/forms';
+
 
 @Component({
   selector: 'tnv-movies',
@@ -13,13 +17,16 @@ export class MoviesComponent implements OnInit, OnChanges {
   responsiveOptions;
   nowPlaying: Partial<MovieData>[] = [];
   events: any = [];
+  currentUser: Partial<User> = {};
 
   @Input() startDateFilter: string = "";
   @Input() endDateFilter: string = "";
   @Input() movie: Partial<MovieData> = {};
   @Input() event: Partial<HistoryEvents> = {};
 
-  constructor(private movieService: MoviesService, private historyEventsService: HistoryEventsService) {
+  constructor(private movieService: MoviesService,
+              private historyEventsService: HistoryEventsService,
+              private favouriteService: FavouriteService) {
     this.responsiveOptions = [
       {
         breakpoint: '1024px',
@@ -48,6 +55,15 @@ export class MoviesComponent implements OnInit, OnChanges {
         this.nowPlaying = res.results.slice(0, 10);
         console.log(this.nowPlaying);
       })
+  }
+
+  onSubmit(form: NgForm) {
+    this.favouriteService.createFavourite({
+      userId: this.currentUser.id, movieId: this.movie.id, event: this.event.event}).subscribe({
+      next: (res) => {
+        console.log(res);
+      },
+    });
   }
 
   getEventByYear(release_date: string){
