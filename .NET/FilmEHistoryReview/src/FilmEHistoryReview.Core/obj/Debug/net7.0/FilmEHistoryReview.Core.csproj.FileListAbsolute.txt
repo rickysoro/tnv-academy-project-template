@@ -10,3 +10,15 @@ C:\Users\A\Desktop\ProgettoFinale\.NET\FilmEHistoryReview\src\FilmEHistoryReview
 C:\Users\A\Desktop\ProgettoFinale\.NET\FilmEHistoryReview\src\FilmEHistoryReview.Core\obj\Debug\net7.0\refint\FilmEHistoryReview.Core.dll
 C:\Users\A\Desktop\ProgettoFinale\.NET\FilmEHistoryReview\src\FilmEHistoryReview.Core\obj\Debug\net7.0\FilmEHistoryReview.Core.pdb
 C:\Users\A\Desktop\ProgettoFinale\.NET\FilmEHistoryReview\src\FilmEHistoryReview.Core\obj\Debug\net7.0\ref\FilmEHistoryReview.Core.dll
+C:\Users\A\Documents\Corsi\TNV\Progetti\ProgettoFinale\tnv-academy-project-template\.NET\FilmEHistoryReview\src\FilmEHistoryReview.Core\bin\Debug\net7.0\FilmEHistoryReview.Core.deps.json
+C:\Users\A\Documents\Corsi\TNV\Progetti\ProgettoFinale\tnv-academy-project-template\.NET\FilmEHistoryReview\src\FilmEHistoryReview.Core\bin\Debug\net7.0\FilmEHistoryReview.Core.dll
+C:\Users\A\Documents\Corsi\TNV\Progetti\ProgettoFinale\tnv-academy-project-template\.NET\FilmEHistoryReview\src\FilmEHistoryReview.Core\bin\Debug\net7.0\FilmEHistoryReview.Core.pdb
+C:\Users\A\Documents\Corsi\TNV\Progetti\ProgettoFinale\tnv-academy-project-template\.NET\FilmEHistoryReview\src\FilmEHistoryReview.Core\obj\Debug\net7.0\FilmEHistoryReview.Core.csproj.AssemblyReference.cache
+C:\Users\A\Documents\Corsi\TNV\Progetti\ProgettoFinale\tnv-academy-project-template\.NET\FilmEHistoryReview\src\FilmEHistoryReview.Core\obj\Debug\net7.0\FilmEHistoryReview.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\A\Documents\Corsi\TNV\Progetti\ProgettoFinale\tnv-academy-project-template\.NET\FilmEHistoryReview\src\FilmEHistoryReview.Core\obj\Debug\net7.0\FilmEHistoryReview.Core.AssemblyInfoInputs.cache
+C:\Users\A\Documents\Corsi\TNV\Progetti\ProgettoFinale\tnv-academy-project-template\.NET\FilmEHistoryReview\src\FilmEHistoryReview.Core\obj\Debug\net7.0\FilmEHistoryReview.Core.AssemblyInfo.cs
+C:\Users\A\Documents\Corsi\TNV\Progetti\ProgettoFinale\tnv-academy-project-template\.NET\FilmEHistoryReview\src\FilmEHistoryReview.Core\obj\Debug\net7.0\FilmEHistoryReview.Core.csproj.CoreCompileInputs.cache
+C:\Users\A\Documents\Corsi\TNV\Progetti\ProgettoFinale\tnv-academy-project-template\.NET\FilmEHistoryReview\src\FilmEHistoryReview.Core\obj\Debug\net7.0\FilmEHistoryReview.Core.dll
+C:\Users\A\Documents\Corsi\TNV\Progetti\ProgettoFinale\tnv-academy-project-template\.NET\FilmEHistoryReview\src\FilmEHistoryReview.Core\obj\Debug\net7.0\refint\FilmEHistoryReview.Core.dll
+C:\Users\A\Documents\Corsi\TNV\Progetti\ProgettoFinale\tnv-academy-project-template\.NET\FilmEHistoryReview\src\FilmEHistoryReview.Core\obj\Debug\net7.0\FilmEHistoryReview.Core.pdb
+C:\Users\A\Documents\Corsi\TNV\Progetti\ProgettoFinale\tnv-academy-project-template\.NET\FilmEHistoryReview\src\FilmEHistoryReview.Core\obj\Debug\net7.0\ref\FilmEHistoryReview.Core.dll

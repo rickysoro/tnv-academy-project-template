@@ -6119,11 +6119,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\A\\desktop\\ProgettoFinale\\.NET\\FilmEHistoryReview\\test\\FilmEHistory.Core.Test\\FilmEHistory.Core.Test.csproj",
+      "projectUniqueName": "C:\\Users\\A\\Documents\\Corsi\\TNV\\Progetti\\ProgettoFinale\\tnv-academy-project-template\\.NET\\FilmEHistoryReview\\test\\FilmEHistory.Core.Test\\FilmEHistory.Core.Test.csproj",
       "projectName": "FilmEHistory.Core.Test",
-      "projectPath": "C:\\Users\\A\\desktop\\ProgettoFinale\\.NET\\FilmEHistoryReview\\test\\FilmEHistory.Core.Test\\FilmEHistory.Core.Test.csproj",
+      "projectPath": "C:\\Users\\A\\Documents\\Corsi\\TNV\\Progetti\\ProgettoFinale\\tnv-academy-project-template\\.NET\\FilmEHistoryReview\\test\\FilmEHistory.Core.Test\\FilmEHistory.Core.Test.csproj",
       "packagesPath": "C:\\Users\\A\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\A\\desktop\\ProgettoFinale\\.NET\\FilmEHistoryReview\\test\\FilmEHistory.Core.Test\\obj\\",
+      "outputPath": "C:\\Users\\A\\Documents\\Corsi\\TNV\\Progetti\\ProgettoFinale\\tnv-academy-project-template\\.NET\\FilmEHistoryReview\\test\\FilmEHistory.Core.Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\A\\AppData\\Roaming\\NuGet\\NuGet.Config",

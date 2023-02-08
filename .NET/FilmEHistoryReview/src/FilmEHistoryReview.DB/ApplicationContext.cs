@@ -19,7 +19,7 @@ namespace FilmEHistoryReview.DB
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             var version = new MySqlServerVersion(new Version(8, 0, 30));
-            var connectionString = "Server = localhost; Port = 3306; Database = film_&_history; Uid = root; Pwd = Rt28p4";
+            var connectionString = "Server = localhost; Port = 3306; Database = film_history_db; Uid = root; Pwd = Rt28p4";
 
             optionsBuilder.UseMySql(connectionString, version);
             base.OnConfiguring(optionsBuilder);

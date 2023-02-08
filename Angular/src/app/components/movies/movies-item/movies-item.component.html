@@ -81,6 +81,10 @@
                             </div>
                             <button type="submit" class="btn btn-dark"
                                 (click)="getEventByYear(movie.release_date)">EVENTI STORICI</button>
+                                <br><br><br>
+                                <div>
+                                    <tnv-rating></tnv-rating>
+                                </div>
                         </div>
                     </div>
                 </mat-tab>
@@ -92,7 +96,7 @@
                 [responsiveOptions]="responsiveOptions">
                 <ng-template pTemplate="header">
                     <br>
-                    <h3 class="listing__title">EVENTI STORICI</h3>
+                    <h3 class="listing__title">EVENTI STORICI COLLEGATI</h3>
                 </ng-template>
                 <br>
                 <ng-template let-event pTemplate="item">

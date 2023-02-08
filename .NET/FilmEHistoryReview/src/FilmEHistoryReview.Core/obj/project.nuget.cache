@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WiugCwcP6g9G8P4QI1Zhk8qE4eP9XJOn2iaJY8c2dHlCPc9VEfuLVc1F4LCH+NBGWTXY7AWzqrjVZ6hLbLhjLw==",
+  "dgSpecHash": "dTFnQmsHru+NNx6p9x4Gf4k0o2LYrWYxboXFVi8e6+S/fiUWHo0yrzf0iV9bRN6dkqCbexuXR+jTvOhT7w74qw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\A\\Desktop\\ProgettoFinale\\.NET\\FilmEHistoryReview\\src\\FilmEHistoryReview.Core\\FilmEHistoryReview.Core.csproj",
+  "projectFilePath": "C:\\Users\\A\\Documents\\Corsi\\TNV\\Progetti\\ProgettoFinale\\tnv-academy-project-template\\.NET\\FilmEHistoryReview\\src\\FilmEHistoryReview.Core\\FilmEHistoryReview.Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -3,9 +3,6 @@ import { NgForm } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 import { AuthService } from 'src/app/@core/services/auth.service';
 import { ReviewService } from 'src/app/@core/services/review.service';
-import { MoviesService } from 'src/app/@core/services/movies.service';
-import { MovieData } from 'src/app/models/movieData';
-import { MoviesItemComponent } from '../movies/movies-item/movies-item.component';
 
 @Component({
   selector: 'tnv-review',
@@ -20,20 +17,13 @@ export class ReviewComponent implements OnInit {
     this.movieId = this.activatedRoute.snapshot.params['movieId'];
   }
 
-  /* onSubmit(form: NgForm) {
-    console.log(form.value)
-  } */
-
   createReviewBody(form: NgForm) {
     let reviewComment = JSON.stringify(form)
-    console.log(reviewComment.split(":")[1].replace('"',"").replace("}",""))
-    /* console.log(form.form.value) */
-    /* console.log(form["review"]) */
-    /* console.log((String)form) */
+    let obj = JSON.parse(reviewComment)
     let review = {
       userId: this.authService.getCurrentUser().id,
       movieId: this.movieId,
-      comment: reviewComment.split(":")[1].replace('"',"").replace("}","").replace('"',"")     /* JSON.stringify(form).split('\",')[1] */   /* JSON.stringify(form) -> Si vede ma JSON */
+      comment: obj.review
     }
     return review;
   }

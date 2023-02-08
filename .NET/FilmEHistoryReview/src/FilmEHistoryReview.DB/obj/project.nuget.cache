@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UjUIdSPiqYNDLUWLHmDzFm8RGkDFFwVrE+cWosM8bj+OxMpF2mrgwvX95eknLaXD6bQIrahhxpfpMdTk/Vw1WQ==",
+  "dgSpecHash": "82MAZJmrxrTun5z01oLsvTfhvvx11IfO7LEOzfA6W/eZAK7CEVJhebFkwGtifKbPEpEOL1BXQmZRkW5MDedZXQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\A\\Desktop\\ProgettoFinale\\.NET\\FilmEHistoryReview\\src\\FilmEHistoryReview.DB\\FilmEHistoryReview.DB.csproj",
+  "projectFilePath": "C:\\Users\\A\\Documents\\Corsi\\TNV\\Progetti\\ProgettoFinale\\tnv-academy-project-template\\.NET\\FilmEHistoryReview\\src\\FilmEHistoryReview.DB\\FilmEHistoryReview.DB.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\A\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\A\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.10\\microsoft.entityframeworkcore.6.0.10.nupkg.sha512",

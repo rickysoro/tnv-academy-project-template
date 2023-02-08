@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HxaVOBAnFKLEeKNtQ4L0M+Rx9vcyhSN0AYYghSWjbkSglW3m7vYIIBvzhwMhmezkVDz7nN5j7QkofYTNAsUGgA==",
+  "dgSpecHash": "9nViZqeL2R/Vca/aBzp6QSDMuaaz0wdlrAiNuRQ0BzDO0wOwDqiBDXxHEzoQnrsrvMQlcTDh4KSLY6P7h/mLkQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\A\\Desktop\\ProgettoFinale\\.NET\\FilmEHistoryReview\\test\\FilmEHistory.Core.Test\\FilmEHistory.Core.Test.csproj",
+  "projectFilePath": "C:\\Users\\A\\Documents\\Corsi\\TNV\\Progetti\\ProgettoFinale\\tnv-academy-project-template\\.NET\\FilmEHistoryReview\\test\\FilmEHistory.Core.Test\\FilmEHistory.Core.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\A\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\A\\.nuget\\packages\\microsoft.codecoverage\\17.3.2\\microsoft.codecoverage.17.3.2.nupkg.sha512",

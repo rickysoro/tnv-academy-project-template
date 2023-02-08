@@ -3,6 +3,9 @@ import { HistoryEventsService } from 'src/app/@core/services/history-events.serv
 import { MoviesService } from 'src/app/@core/services/movies.service';
 import { MovieData } from 'src/app/models/movieData';
 import { HistoryEvents } from 'src/app/models/historyEvent';
+import { User } from 'src/app/models/user';
+import { NgForm } from '@angular/forms';
+
 
 @Component({
   selector: 'tnv-movies',
@@ -13,6 +16,7 @@ export class MoviesComponent implements OnInit, OnChanges {
   responsiveOptions;
   nowPlaying: Partial<MovieData>[] = [];
   events: any = [];
+  currentUser: Partial<User> = {};
 
   @Input() startDateFilter: string = "";
   @Input() endDateFilter: string = "";
@@ -50,17 +54,17 @@ export class MoviesComponent implements OnInit, OnChanges {
       })
   }
 
-  getEventByYear(release_date: string){
+  getEventByYear(release_date: string) {
     console.log(release_date)
     const year = release_date.split("-")[0]
     const month = release_date.split("-")[1]
     console.log(year, month)
-   
-    this.historyEventsService.getEventByYear({year, month}).subscribe(
-      
-    res => {
-      this.events = res;
-      console.log(res);
-    })
+
+    this.historyEventsService.getEventByYear({ year, month }).subscribe(
+
+      res => {
+        this.events = res;
+        console.log(res);
+      })
   }
 }

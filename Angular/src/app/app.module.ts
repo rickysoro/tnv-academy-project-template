@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule, NgbRatingModule } from '@ng-bootstrap/ng-bootstrap';
 import { LoginComponent } from './@shared/components/login/login.component';
 import { LogoutComponent } from './@shared/components/logout/logout.component';
 import { RegisterComponent } from './@shared/components/register/register.component';
@@ -26,6 +26,7 @@ import { ButtonModule } from 'primeng/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { StyleClassModule } from 'primeng/styleclass';
 import { NumberWithCommasPipe } from '../assets/pipe/number-with-commas.pipe';
+import { RatingComponent } from './components/rating/rating.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { NumberWithCommasPipe } from '../assets/pipe/number-with-commas.pipe';
     MoviesItemComponent,
     MoviesDateComponent,
     EventsComponent,
-    NumberWithCommasPipe
+    NumberWithCommasPipe,
+    RatingComponent
   ],
   imports: [
     BrowserModule,
@@ -58,6 +60,7 @@ import { NumberWithCommasPipe } from '../assets/pipe/number-with-commas.pipe';
     ButtonModule,
     BrowserAnimationsModule,
     StyleClassModule,
+    NgbRatingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1242,11 +1242,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\A\\Desktop\\ProgettoFinale\\.NET\\FilmEHistoryReview\\src\\FilmEHistoryReview.RestAPI\\FilmEHistoryReview.RestAPI.csproj",
+      "projectUniqueName": "C:\\Users\\A\\Documents\\Corsi\\TNV\\Progetti\\ProgettoFinale\\tnv-academy-project-template\\.NET\\FilmEHistoryReview\\src\\FilmEHistoryReview.RestAPI\\FilmEHistoryReview.RestAPI.csproj",
       "projectName": "FilmEHistoryReview.RestAPI",
-      "projectPath": "C:\\Users\\A\\Desktop\\ProgettoFinale\\.NET\\FilmEHistoryReview\\src\\FilmEHistoryReview.RestAPI\\FilmEHistoryReview.RestAPI.csproj",
+      "projectPath": "C:\\Users\\A\\Documents\\Corsi\\TNV\\Progetti\\ProgettoFinale\\tnv-academy-project-template\\.NET\\FilmEHistoryReview\\src\\FilmEHistoryReview.RestAPI\\FilmEHistoryReview.RestAPI.csproj",
       "packagesPath": "C:\\Users\\A\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\A\\Desktop\\ProgettoFinale\\.NET\\FilmEHistoryReview\\src\\FilmEHistoryReview.RestAPI\\obj\\",
+      "outputPath": "C:\\Users\\A\\Documents\\Corsi\\TNV\\Progetti\\ProgettoFinale\\tnv-academy-project-template\\.NET\\FilmEHistoryReview\\src\\FilmEHistoryReview.RestAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\A\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1263,11 +1263,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\A\\Desktop\\ProgettoFinale\\.NET\\FilmEHistoryReview\\src\\FilmEHistoryReview.Core\\FilmEHistoryReview.Core.csproj": {
-              "projectPath": "C:\\Users\\A\\Desktop\\ProgettoFinale\\.NET\\FilmEHistoryReview\\src\\FilmEHistoryReview.Core\\FilmEHistoryReview.Core.csproj"
+            "C:\\Users\\A\\Documents\\Corsi\\TNV\\Progetti\\ProgettoFinale\\tnv-academy-project-template\\.NET\\FilmEHistoryReview\\src\\FilmEHistoryReview.Core\\FilmEHistoryReview.Core.csproj": {
+              "projectPath": "C:\\Users\\A\\Documents\\Corsi\\TNV\\Progetti\\ProgettoFinale\\tnv-academy-project-template\\.NET\\FilmEHistoryReview\\src\\FilmEHistoryReview.Core\\FilmEHistoryReview.Core.csproj"
             },
-            "C:\\Users\\A\\Desktop\\ProgettoFinale\\.NET\\FilmEHistoryReview\\src\\FilmEHistoryReview.DB\\FilmEHistoryReview.DB.csproj": {
-              "projectPath": "C:\\Users\\A\\Desktop\\ProgettoFinale\\.NET\\FilmEHistoryReview\\src\\FilmEHistoryReview.DB\\FilmEHistoryReview.DB.csproj"
+            "C:\\Users\\A\\Documents\\Corsi\\TNV\\Progetti\\ProgettoFinale\\tnv-academy-project-template\\.NET\\FilmEHistoryReview\\src\\FilmEHistoryReview.DB\\FilmEHistoryReview.DB.csproj": {
+              "projectPath": "C:\\Users\\A\\Documents\\Corsi\\TNV\\Progetti\\ProgettoFinale\\tnv-academy-project-template\\.NET\\FilmEHistoryReview\\src\\FilmEHistoryReview.DB\\FilmEHistoryReview.DB.csproj"
             }
           }
         }

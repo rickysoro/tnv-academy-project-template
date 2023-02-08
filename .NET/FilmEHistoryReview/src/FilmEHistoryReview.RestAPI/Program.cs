@@ -13,6 +13,7 @@ namespace FilmEHistoryReview.RestAPI
 
             // Add services to the container.
 
+            builder.Services.AddCors();
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
@@ -32,8 +33,14 @@ namespace FilmEHistoryReview.RestAPI
                 app.UseSwaggerUI();
             }
 
-            app.UseAuthorization();
+            app.UseCors(builder =>
+            {
+                builder.AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader();
+            });
 
+            app.UseAuthorization();
 
             app.MapControllers();
 
