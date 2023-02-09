@@ -1,0 +1,12 @@
+C:\Users\A\documenti\corsi\TNV\Progetti\ProgettoFinale\tnv-academy-project-template\.NET\FilmEHistoryReviewBackend\src\FilmEHistoryReviewBackend.Core\bin\Debug\net7.0\FilmEHistoryReviewBackend.Core.deps.json
+C:\Users\A\documenti\corsi\TNV\Progetti\ProgettoFinale\tnv-academy-project-template\.NET\FilmEHistoryReviewBackend\src\FilmEHistoryReviewBackend.Core\bin\Debug\net7.0\FilmEHistoryReviewBackend.Core.dll
+C:\Users\A\documenti\corsi\TNV\Progetti\ProgettoFinale\tnv-academy-project-template\.NET\FilmEHistoryReviewBackend\src\FilmEHistoryReviewBackend.Core\bin\Debug\net7.0\FilmEHistoryReviewBackend.Core.pdb
+C:\Users\A\documenti\corsi\TNV\Progetti\ProgettoFinale\tnv-academy-project-template\.NET\FilmEHistoryReviewBackend\src\FilmEHistoryReviewBackend.Core\obj\Debug\net7.0\FilmEHistoryReviewBackend.Core.csproj.AssemblyReference.cache
+C:\Users\A\documenti\corsi\TNV\Progetti\ProgettoFinale\tnv-academy-project-template\.NET\FilmEHistoryReviewBackend\src\FilmEHistoryReviewBackend.Core\obj\Debug\net7.0\FilmEHistoryReviewBackend.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\A\documenti\corsi\TNV\Progetti\ProgettoFinale\tnv-academy-project-template\.NET\FilmEHistoryReviewBackend\src\FilmEHistoryReviewBackend.Core\obj\Debug\net7.0\FilmEHistoryReviewBackend.Core.AssemblyInfoInputs.cache
+C:\Users\A\documenti\corsi\TNV\Progetti\ProgettoFinale\tnv-academy-project-template\.NET\FilmEHistoryReviewBackend\src\FilmEHistoryReviewBackend.Core\obj\Debug\net7.0\FilmEHistoryReviewBackend.Core.AssemblyInfo.cs
+C:\Users\A\documenti\corsi\TNV\Progetti\ProgettoFinale\tnv-academy-project-template\.NET\FilmEHistoryReviewBackend\src\FilmEHistoryReviewBackend.Core\obj\Debug\net7.0\FilmEHistoryReviewBackend.Core.csproj.CoreCompileInputs.cache
+C:\Users\A\documenti\corsi\TNV\Progetti\ProgettoFinale\tnv-academy-project-template\.NET\FilmEHistoryReviewBackend\src\FilmEHistoryReviewBackend.Core\obj\Debug\net7.0\FilmEHistoryReviewBackend.Core.dll
+C:\Users\A\documenti\corsi\TNV\Progetti\ProgettoFinale\tnv-academy-project-template\.NET\FilmEHistoryReviewBackend\src\FilmEHistoryReviewBackend.Core\obj\Debug\net7.0\refint\FilmEHistoryReviewBackend.Core.dll
+C:\Users\A\documenti\corsi\TNV\Progetti\ProgettoFinale\tnv-academy-project-template\.NET\FilmEHistoryReviewBackend\src\FilmEHistoryReviewBackend.Core\obj\Debug\net7.0\FilmEHistoryReviewBackend.Core.pdb
+C:\Users\A\documenti\corsi\TNV\Progetti\ProgettoFinale\tnv-academy-project-template\.NET\FilmEHistoryReviewBackend\src\FilmEHistoryReviewBackend.Core\obj\Debug\net7.0\ref\FilmEHistoryReviewBackend.Core.dll
