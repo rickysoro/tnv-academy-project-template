@@ -10,6 +10,7 @@ import { ProfileComponent } from "./components/profile/profile.component";
 import { RankingsComponent } from "./components/rankings/rankings.component";
 import { MoviesDateComponent } from "./components/movies/movies-date/movies-date.component";
 import { MoviesItemComponent } from "./components/movies/movies-item/movies-item.component";
+import { FavouritesComponent } from "./components/favourites/favourites/favourites.component";
  
 const routes: Routes = [
   {
@@ -19,7 +20,7 @@ const routes: Routes = [
     children: [
       { path: "welcome", component: WelcomeComponent },
       { path: "profile", component: ProfileComponent },
-      { path: "rankings", component: RankingsComponent },
+      { path: "favourites", component: FavouritesComponent },
       { path: "movies", component: MoviesDateComponent},
       { path: "movies/:movieId", component: MoviesItemComponent},
       { path: "", redirectTo: "welcome", pathMatch: 'full' },

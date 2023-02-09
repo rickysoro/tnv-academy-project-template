@@ -26,7 +26,6 @@ import { ButtonModule } from 'primeng/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { StyleClassModule } from 'primeng/styleclass';
 import { NumberWithCommasPipe } from '../assets/pipe/number-with-commas.pipe';
-import { RatingComponent } from './components/rating/rating.component';
 
 @NgModule({
   declarations: [
@@ -44,8 +43,6 @@ import { RatingComponent } from './components/rating/rating.component';
     MoviesItemComponent,
     MoviesDateComponent,
     EventsComponent,
-    NumberWithCommasPipe,
-    RatingComponent
   ],
   imports: [
     BrowserModule,

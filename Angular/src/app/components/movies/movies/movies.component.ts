@@ -23,7 +23,8 @@ export class MoviesComponent implements OnInit, OnChanges {
   @Input() movie: Partial<MovieData> = {};
   @Input() event: Partial<HistoryEvents> = {};
 
-  constructor(private movieService: MoviesService, private historyEventsService: HistoryEventsService) {
+  constructor(private movieService: MoviesService,
+              private historyEventsService: HistoryEventsService) {
     this.responsiveOptions = [
       {
         breakpoint: '1024px',
